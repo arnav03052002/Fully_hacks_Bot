@@ -261,7 +261,7 @@ app.add_middleware(
 )
 
 # === Load Vector DB and Groq LLM ===
-embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 vectordb = Chroma(persist_directory="chroma_store", embedding_function=embedding)
 retriever = vectordb.as_retriever(search_kwargs={"k": 8})
 
