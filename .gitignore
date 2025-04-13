@@ -1,0 +1,8 @@
+__pycache__
+myenv
+.env
+app.py
+app1.py
+rag.py
+rag1.py
+csuf_course_professor_merged (1).csv
