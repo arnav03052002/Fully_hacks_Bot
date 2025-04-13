@@ -1,11 +1,11 @@
+import re
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
-from langchain_chroma import Chroma
+from fastapi.middleware.cors import CORSMiddleware
+from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from groq import Groq
-import re
-
 # === Init app ===
 app = FastAPI()
 

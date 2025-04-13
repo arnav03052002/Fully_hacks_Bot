@@ -1,7 +1,9 @@
 fastapi
-pandas
-httpx
 uvicorn
-langchain 
-chromadb 
-sentence-transformers 
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+chromadb
+groq
+tqdm
